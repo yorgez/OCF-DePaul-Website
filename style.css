@@ -4,8 +4,8 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: #222; 
-    overflow-x: hidden; 
+    color: #222;
+    overflow-x: hidden;
 }
 
 
@@ -107,7 +107,7 @@ width 90%;
     font-size: 4.5em;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    
+
 }
 
 .schoolname h4{
@@ -123,11 +123,15 @@ width 90%;
     color: #517fa4;
 }
 
+.fa-discord {
+    color: #4e77b1;
+}
+
 .fa-envelope {
     color: #a6a6a6;
 }
 
-.fa-facebook:hover,.fa-instagram:hover,.fa-envelope:hover
+.fa-facebook:hover,.fa-instagram:hover,.fa-envelope:hover,.fa-discord:hover
 {
     color:#d5d5d5
 }
@@ -138,7 +142,7 @@ background-color: #3f3f3f;
 color: #d5d5d5;
 }
 
-hr.light 
+hr.light
 {
     border-top: 1px solid #d5d5d5;
     width: 75%;
@@ -175,11 +179,11 @@ padding-left: 2rem;
         .suppericon {
         width: 300px;
     }
-    
+
     .saintimage {
         width: 200px;
     }
-    
+
     .abouttext p {
         font-size: 1rem;
     }
@@ -191,29 +195,29 @@ padding-left: 2rem;
     .social a {
         font-size: 4em;
     }
-    
+
     .carousel-caption
     {
         top: 30%;
     }
-    
+
     .carousel-caption h1 {
         font-size: 4em;
     }
-    
+
             .suppericon {
         width: 250px;
     }
 
   }
-    
+
 @media (max-width: 768px)
 {
     .carousel-caption
     {
         top: 25%;
     }
-    
+
     .carousel-caption h1
     {
     font-size: 3em;
@@ -225,30 +229,30 @@ padding-left: 2rem;
     font-size 140% !important;
     font-weight: 400;
     text-shadow: 4px 3px 8px #000;
-    padding-bottom: .2rem;    
+    padding-bottom: .2rem;
     }
-    
-    .social a 
+
+    .social a
     {
     font-size 2.5rem;
     }
 
     .display-4
     {
-    font-size: 200%;    
-    }    
-    
+    font-size: 200%;
+    }
+
     .newtext h2 {
     font-size: 1.5em;
 }
             .suppericon {
         width: 400px;
     }
-    
+
         .saintimage {
         width: 275px;
     }
-    
+
 }
 
 @media (max-width: 576px)
@@ -257,23 +261,23 @@ padding-left: 2rem;
     {
         top: 20%;
     }
-    
+
     .carousel-indicators {
-        
+
     }
-    
-    
+
+
      .carousel-caption h1
     {
     font-size: 2.5em;
     text-shadow: 4px 3px 8px #000;
     }
-    
-    .social a 
+
+    .social a
     {
     font-size 2rem;
     }
-    
+
     .newtext h2 {
     font-size: 1.4em;
 }
@@ -281,10 +285,10 @@ padding-left: 2rem;
     width: 350px;
     padding-right: 30px;
     }
-    
+
 }
 
-#map 
+#map
 {
     height: 500px;
     width 100%;
@@ -328,10 +332,3 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
-
-
-
-
-
-
-
