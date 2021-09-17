@@ -1,5 +1,5 @@
 # OCF-Website
-Website for OCF DePaul with the possibility of expanding to include OCF Loyola.
+Website for DePaul University on campus student organization OCF DePaul with the possibility of expanding to include OCF Loyola and other Chicago area OCF groups.
 
 
 ## Contributors
