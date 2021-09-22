@@ -3,4 +3,4 @@ Website for DePaul University on campus student organization OCF DePaul with the
 
 
 ## Contributors
-Built by: yorgez, mffakhouri
+Built by: yorgez, mikefak
