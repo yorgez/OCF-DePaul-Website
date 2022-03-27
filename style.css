@@ -8,11 +8,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
-.chapters{
-    font-size: 2.5em;
-}
-
 .connectinfo h5{
     padding-left: 1rem;
 
@@ -189,6 +184,7 @@ padding-left: 2rem;
     }
 }
 
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .social a {
@@ -293,6 +289,15 @@ padding-left: 2rem;
     width 100%;
 }
 
+iframe {
+  height: 145%;
+  width: 90%;
+  resize: both;
+  overflow: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
