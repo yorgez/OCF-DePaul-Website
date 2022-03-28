@@ -258,17 +258,30 @@ padding-left: 2rem;
 
 @media (max-width: 768px){
     .carousel-caption h1 {
-        font-size: 4em;
+        font-size: 3em;
+    }
+    .carousel-caption h3
+    {
+    font-size: 0.5em;
+    }
+    .carousel-caption {
+    bottom: 3vh;
     }
 }
 
 @media (max-width: 576px) {
      .carousel-caption h1
     {
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-shadow: 4px 3px 8px #000;
     }
-
+    .carousel-caption h3
+    {
+    font-size: 1em;
+    }
+    .carousel-caption {
+    bottom: 3vh;
+    }
     .social a{
     font-size 2rem;
     }
