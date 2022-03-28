@@ -10,12 +10,10 @@ html, body {
 
 .connectinfo h5{
     padding-left: 1rem;
-
 }
 
 .infobtn {
     font-size: 1.5em;
-
 }
 
 .navbar.nav li {
@@ -33,19 +31,60 @@ width 90%;
 
 .carousel-caption {
     position: absolute;
-    top: 63%
+    top: 72%
 }
 
 .carousel-caption h1{
-    font-size 500%;
+    font-size: 9em;
     text-shadow: 4px 3px 8px #000;
 }
 
 .carousel-caption h3{
-    font-size 200%;
-    font-weight: 500;
+    font-size: 3em;
     text-shadow: 4px 3px 8px #000;
     padding-bottom: 1rem;
+}
+
+.header-down-arrow {
+  position: absolute;
+    bottom: 3.5vh;
+    left: 0;
+    right: 0;
+
+  text-align: center;
+  z-index: 10;
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-down-arrow img {
+  animation: fade-slide-up 1s 1s ease-out forwards,
+             pulse 2s 3s ease-out infinite;
+  opacity: 0;
 }
 
 .jumbotron {
@@ -102,13 +141,11 @@ width 90%;
     font-size: 4.5em;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-
 }
 
 .schoolname h4{
     padding-left: 0rem;
 }
-
 
 .fa-facebook {
     color: #3b5998;
@@ -126,19 +163,16 @@ width 90%;
     color: #a6a6a6;
 }
 
-.fa-facebook:hover,.fa-instagram:hover,.fa-envelope:hover,.fa-discord:hover
-{
-    color:#d5d5d5
+.fa-facebook:hover,.fa-instagram:hover,.fa-envelope:hover,.fa-discord:hover {
+    color:#d5d5d5;
 }
 
-footer
-{
+footer {
 background-color: #3f3f3f;
 color: #d5d5d5;
 }
 
-hr.light
-{
+hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
 }
@@ -146,7 +180,6 @@ hr.light
 .teamline {
     width: 90%;
 }
-
 .suppericon {
   width: 400px;
   display: block;
@@ -170,121 +203,108 @@ padding-right: 2rem;
 padding-left: 2rem;
 }
 
-@media (max-width: 1250px) {
-        .suppericon {
-        width: 300px;
-    }
+/*---Media Queries --*/
 
-    .saintimage {
-        width: 200px;
+@media (max-width: 1925px) {
+    .carousel-caption{
+        top: 63%;
     }
-
-    .abouttext p {
-        font-size: 1rem;
+    .carousel-caption h1 {
+        font-size: 9em;
     }
 }
 
+@media (max-width: 1700px) {
+    .carousel-caption
+    {
+        top: 65%;
+    }
+    .carousel-caption h1 {
+        font-size: 6em;
+    }
+    .carousel-caption h3 {
+        font-size: 2em;
+    }
+}
 
-/*---Media Queries --*/
+@media (max-width: 1500px) {
+    .suppericon {
+        width: 300px;
+    }
+    .saintimage {
+        width: 200px;
+    }
+    .abouttext p {
+        font-size: 1rem;
+    }
+    .carousel-caption h1 {
+        font-size: 6em;
+    }
+    .carousel-caption
+    {
+        top: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-caption h1 {
+        font-size: 5.5em;
+    }
+    .carousel-caption
+    {
+        top: 50%;
+    }
+}
+
 @media (max-width: 992px) {
     .social a {
         font-size: 4em;
     }
-
-    .carousel-caption
-    {
+    .carousel-caption{
         top: 30%;
     }
+    .carousel-caption h1 {
+        font-size: 5.5em;
+    }
+    .suppericon {
+        width: 350px;
+    }
+}
 
+@media (max-width: 768px){
+    .carousel-caption{
+        top: 20%;
+    }
     .carousel-caption h1 {
         font-size: 4em;
     }
-
-            .suppericon {
-        width: 250px;
-    }
-
-  }
-
-@media (max-width: 768px)
-{
-    .carousel-caption
-    {
-        top: 25%;
-    }
-
-    .carousel-caption h1
-    {
-    font-size: 3em;
-    text-shadow: 4px 3px 8px #000;
-    }
-
-    .carousel-caption h3
-    {
-    font-size 140% !important;
-    font-weight: 400;
-    text-shadow: 4px 3px 8px #000;
-    padding-bottom: .2rem;
-    }
-
-    .social a
-    {
-    font-size 2.5rem;
-    }
-
-    .display-4
-    {
-    font-size: 200%;
-    }
-
-    .newtext h2 {
-    font-size: 1.5em;
-}
-            .suppericon {
-        width: 400px;
-    }
-
-        .saintimage {
-        width: 275px;
-    }
-
 }
 
-@media (max-width: 576px)
-{
+@media (max-width: 576px) {
      .carousel-caption
     {
-        top: 20%;
+        top: 15%;
     }
-
-    .carousel-indicators {
-
-    }
-
-
      .carousel-caption h1
     {
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-shadow: 4px 3px 8px #000;
     }
 
-    .social a
-    {
+    .social a{
     font-size 2rem;
     }
 
     .newtext h2 {
     font-size: 1.4em;
-}
+    }
     .suppericon {
     width: 350px;
     padding-right: 30px;
     }
-
 }
 
-#map
-{
+#map {
     height: 500px;
     width 100%;
 }
@@ -300,6 +320,7 @@ iframe {
 }
 
 /*---Firefox Bug Fix --*/
+
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -307,21 +328,12 @@ iframe {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
 
 figure {
    margin: 0;
 }
-
-/*--- .fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
---*/
 
 #fixed {
   background-image: url('img/scroll.jpg');
@@ -333,6 +345,7 @@ figure {
 }
 
 /*--- Bootstrap Padding Fix --*/
+
 [class*="col-"] {
     padding: 1rem;
 }
