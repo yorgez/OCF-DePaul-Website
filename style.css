@@ -31,7 +31,7 @@ width 90%;
 
 .carousel-caption {
     position: absolute;
-    top: 72%
+    bottom: 5vh;
 }
 
 .carousel-caption h1{
@@ -206,19 +206,13 @@ padding-left: 2rem;
 /*---Media Queries --*/
 
 @media (max-width: 1925px) {
-    .carousel-caption{
-        top: 63%;
-    }
     .carousel-caption h1 {
         font-size: 9em;
     }
 }
 
 @media (max-width: 1700px) {
-    .carousel-caption
-    {
-        top: 65%;
-    }
+
     .carousel-caption h1 {
         font-size: 6em;
     }
@@ -240,28 +234,19 @@ padding-left: 2rem;
     .carousel-caption h1 {
         font-size: 6em;
     }
-    .carousel-caption
-    {
-        top: 60%;
-    }
+
 }
 
 @media (max-width: 1200px) {
     .carousel-caption h1 {
         font-size: 5.5em;
     }
-    .carousel-caption
-    {
-        top: 50%;
-    }
+
 }
 
 @media (max-width: 992px) {
     .social a {
         font-size: 4em;
-    }
-    .carousel-caption{
-        top: 30%;
     }
     .carousel-caption h1 {
         font-size: 5.5em;
@@ -272,19 +257,12 @@ padding-left: 2rem;
 }
 
 @media (max-width: 768px){
-    .carousel-caption{
-        top: 20%;
-    }
     .carousel-caption h1 {
         font-size: 4em;
     }
 }
 
 @media (max-width: 576px) {
-     .carousel-caption
-    {
-        top: 15%;
-    }
      .carousel-caption h1
     {
     font-size: 3.5em;
