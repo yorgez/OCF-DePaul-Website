@@ -13,14 +13,14 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
-    <link rel="shortcut icon" href="img/ocf.ico">
+    <link rel="shortcut icon" href="img/chicagocf.ico">
 </head>
 <body>
  
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 <div class="container-fluid"> 
-    <a class="navbar-brand" href="home.html"><img src="img/logo.png" width="190" height="40" alt="OCF Chicago"></a>
+    <a class="navbar-brand" href="home.html"><img src="img/chicagologo.png" width="190" height="40" alt="OCF Chicago"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -220,9 +220,10 @@
             var location = {lat: 41.924, lng: -87.656};
             var trinitylocation = {lat: 41.902033, lng: -87.681546}
             var georgelocation = {lat: 41.931227, lng: -87.653702}
+            var basillocation = {lat: 41.8718609, lng: -87.6660776}
             var map = new google.maps.Map(document.getElementById("map"), 
             {
-                zoom: 13,
+                zoom: 12,
                 center: location,
                 styles: [
   {
@@ -310,16 +311,22 @@
 ]    
             });
             //ADD ALL CHAPTER PARISHES
-            const ContentString = '<h5>' + "DePaul University: Holy Trinity Cathedral (OCA)" + '</h5>' + '<p>Holy Trinity Orthodox Cathedral is the cathedral church of the Orthodox Church in America Diocese of the Midwest and was built in 1903. The church was consecrated by St. Tikhon of Moscow and was under the spiritual guidance of St. John of Chicago during its early years.' + '<br>' + '<br>' + 'We here at Chicago OCF are very fortunate to be able to meet and talk with Fr. Alexander from the parish every year. </p>' + '<br>' + '<p> <a href="https://holytrinitycathedral.net/"> Click Here For More Info </a> </p>' + '<br>' + "1121 N Leavitt St, Chicago, IL 60622";
+            const ContentString = '<h5>' + "Holy Trinity Cathedral (OCA)" + '</h5>' + '<p>Holy Trinity Orthodox Cathedral is the cathedral church of the Orthodox Church in America Diocese of the Midwest and was built in 1903. The church was consecrated by St. Tikhon of Moscow and was under the spiritual guidance of St. John of Chicago during its early years.' + '<br>' + '<br>' + 'We here at Chicago OCF are very fortunate to be able to meet and talk with Fr. Alexander from the parish every year. </p>' + '<br>' + '<p> <a href="https://holytrinitycathedral.net/"> Click Here For More Info </a> </p>' + '<br>' + "1121 N Leavitt St, Chicago, IL 60622";
             
             const infowindow = new google.maps.InfoWindow({
             content: ContentString,
               });
             
-             const georgeContentString = '<h5>' + "DePaul University: St. George Orthodox Church (GOArch)" + '</h5>' + '<p>St George Greek Orthodox Church is one of the oldest Greek Orthodox parishes in the Chicagoland area.' + '<br>' + '<br>' + 'We here at Chicago OCF are very fortunate to be able to use the space at St. George for our meetings and to talk with the parish priests </p>' + '<br>' + '<p> <a href="https://www.stgeorgechicago.net/"> Click Here For More Info </a> </p>' + '<br>' + "2701 N Sheffield Ave, Chicago, IL 60614";
+             const georgeContentString = '<h5>' + "St. George Orthodox Church (GOArch)" + '</h5>' + '<p>St George Greek Orthodox Church is one of the oldest Greek Orthodox parishes in the Chicagoland area.' + '<br>' + '<br>' + 'We here at Chicago OCF are very fortunate to be able to use the space at St. George for our meetings and to talk with the parish priests </p>' + '<br>' + '<p> <a href="https://www.stgeorgechicago.net/"> Click Here For More Info </a> </p>' + '<br>' + "2701 N Sheffield Ave, Chicago, IL 60614";
             
             const georgeinfowindow = new google.maps.InfoWindow({
             content: georgeContentString,
+              });
+
+              const basilContentString = '<h5>' + "St. Basil Orthodox Church (GOArch)" + '</h5>' + '<p>In 1927, the building was transformed into a Greek Orthodox Church.  In its April 9, 1927, account of the dedication, the Greek newspaper Saloniki noted that, “Over two thousand Greeks participated” and that more than 600 people had to stand in the aisles.  The church was designated the first Greek Orthodox Cathedral of Chicago by Bishop Philaretos, who was the first Bishop in Chicago.  The Orthodox Youth Organization of Chicago was initiated at St. Basil in 1946.' + '<br>' + '<br>' + 'We here at Chicago OCF are very fortunate to be able to meet and talk with Fr. Athanasios from the parish every year. </p>' + '<br>' + '<p> <a href="https://holytrinitycathedral.net/"> Click Here For More Info </a> </p>' + '<br>' + "1121 N Leavitt St, Chicago, IL 60622";
+            
+            const basilinfowindow = new google.maps.InfoWindow({
+            content: basilContentString,
               });
             
             const lpContentString = '<h5>' + "Depaul Lincoln Park Campus" + '</h5>'
@@ -338,7 +345,19 @@
             closeOtherInfo();
             georgeinfowindow.open(map, marker1);
             infoObj[0] = georgeinfowindow;
-            });    
+            });
+
+            var basilmarker = new google.maps.Marker({
+            title: "St. Basil Orthodox Church",
+            position: basillocation,
+            map: map,
+            icon: 'img/churchicon.png'
+        });
+            basilmarker.addListener("click", () => {
+            closeOtherInfo();
+            basilinfowindow.open(map, basilmarker);
+            infoObj[0] = basilinfowindow;
+            });   
 
             
             var marker2 = new google.maps.Marker({
